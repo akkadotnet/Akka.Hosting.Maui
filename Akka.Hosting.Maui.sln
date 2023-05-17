@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Akka.Hosting.Maui", "src\Akka.Hosting.Maui\Akka.Hosting.Maui.csproj", "{E945AABA-2779-41E8-9B43-8898FFD64F22}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Akka.Hosting.Maui.Tests", "src\Akka.Hosting.Maui.Tests\Akka.Hosting.Maui.Tests.csproj", "{0F9B9BC6-9F86-40E8-BA9B-D27BF3AC7970}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{AD88EB36-E919-4948-855E-2223B5826AA7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2B9D74C1-4148-46EF-B3FE-7357839FAF40}"
@@ -15,27 +11,36 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		RELEASE_NOTES.md = RELEASE_NOTES.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Akka.Hosting.Maui", "src\Akka.Hosting.Maui\Akka.Hosting.Maui.csproj", "{F3AE6628-7679-415F-8C2C-98EF4B1E4ACC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{814567DC-7D7B-46AF-BEA1-C5CA32B76808}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Akka.Hosting.MauiDemo", "src\Examples\Akka.Hosting.MauiDemo\Akka.Hosting.MauiDemo.csproj", "{E614A64D-3BD6-4700-9BDD-52623EB2A766}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E945AABA-2779-41E8-9B43-8898FFD64F22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E945AABA-2779-41E8-9B43-8898FFD64F22}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E945AABA-2779-41E8-9B43-8898FFD64F22}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E945AABA-2779-41E8-9B43-8898FFD64F22}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0F9B9BC6-9F86-40E8-BA9B-D27BF3AC7970}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0F9B9BC6-9F86-40E8-BA9B-D27BF3AC7970}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0F9B9BC6-9F86-40E8-BA9B-D27BF3AC7970}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0F9B9BC6-9F86-40E8-BA9B-D27BF3AC7970}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AD88EB36-E919-4948-855E-2223B5826AA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AD88EB36-E919-4948-855E-2223B5826AA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3AE6628-7679-415F-8C2C-98EF4B1E4ACC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3AE6628-7679-415F-8C2C-98EF4B1E4ACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3AE6628-7679-415F-8C2C-98EF4B1E4ACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3AE6628-7679-415F-8C2C-98EF4B1E4ACC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E614A64D-3BD6-4700-9BDD-52623EB2A766}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E614A64D-3BD6-4700-9BDD-52623EB2A766}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E614A64D-3BD6-4700-9BDD-52623EB2A766}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E614A64D-3BD6-4700-9BDD-52623EB2A766}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B99E6BB8-642A-4A68-86DF-69567CBA700A}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E614A64D-3BD6-4700-9BDD-52623EB2A766} = {814567DC-7D7B-46AF-BEA1-C5CA32B76808}
 	EndGlobalSection
 EndGlobal
