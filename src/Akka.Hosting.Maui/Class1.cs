@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Petabridge.Library
+namespace Akka.Hosting.Maui
 {
     public class Class1
     {

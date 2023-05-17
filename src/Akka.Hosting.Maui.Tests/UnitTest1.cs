@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 
-namespace Petabridge.Library.Tests
+namespace Akka.Hosting.Maui.Tests
 {
     public class UnitTest1
     {
