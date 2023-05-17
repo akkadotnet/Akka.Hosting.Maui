@@ -17,6 +17,7 @@
         <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <Description>Akka.Hosting support for .NET Maui applications. Works on all supported Maui platforms.</Description>
+        <PackageTags>Akka;Akka.Hosting;Maui;Microsoft.Extensions.Hosting;</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>
