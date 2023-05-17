@@ -1,17 +1,24 @@
 ﻿<Project>
   <PropertyGroup>
-    <Copyright>Copyright © 2022 Your Company</Copyright>
-    <Authors>Your Authors</Authors>
+    <Copyright>Copyright © 2013-2023 Akka.NET Team</Copyright>
+    <Authors>Akka.NET Team</Authors>
     <VersionPrefix>0.3.0</VersionPrefix>
     <PackageReleaseNotes>• Fixed bugs</PackageReleaseNotes>
-    <PackageIconUrl>
-    </PackageIconUrl>
+    <PackageIcon>akkalogo.png</PackageIcon>
     <PackageProjectUrl>
+        https://github.com/akkadotnet/Akka.Hosting.Maui
     </PackageProjectUrl>
-    <PackageLicenseUrl>
-    </PackageLicenseUrl>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <NoWarn>$(NoWarn);CS1591</NoWarn>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <PropertyGroup>
+      <LangVersion>10.0</LangVersion>
+      <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+
   <PropertyGroup>
     <LibraryFramework>net7.0</LibraryFramework>
     <TestsNetCoreFramework>net7.0</TestsNetCoreFramework>
@@ -20,11 +27,17 @@
     <XunitRunnerVisualstudio>2.4.5</XunitRunnerVisualstudio>
     <TestSdkVersion>17.4.1</TestSdkVersion>
   </PropertyGroup>
+  
   <!-- SourceLink support for all Akka.NET projects -->
   <ItemGroup>
     <PackageReference Include="Microsoft.SourceLink.GitHub" PrivateAssets="All" />
-	<None Include="$(MSBuildThisFileDirectory)\..\README.md" Pack="true" Visible="false" PackagePath="\" />
   </ItemGroup>
+
+  <ItemGroup>
+      <None Include="$(MSBuildThisFileDirectory)\..\docs\images\akkalogo.png" Pack="true" Visible="false" PackagePath="\" />
+      <None Include="$(MSBuildThisFileDirectory)\..\README.md" Pack="true" Visible="false" PackagePath="\" />
+  </ItemGroup>
+
   <PropertyGroup>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <!-- Optional: Embed source files that are not tracked by the source control manager in the PDB -->

@@ -32,24 +32,16 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Make build.sh executable
-        run: chmod +x ./build.sh
-      - name: Make build.cmd executable
-        run: chmod +x ./build.cmd
-      - uses: actions/setup-dotnet@v1
+      - name: "Install .NET SDK"
+        uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: 7.0.*
+          dotnet-version: |
+            7.0.x
+          global-json-file: "./global.json"
       - name: Install MAUI Workloads
         run: |
           dotnet workload install maui --ignore-failed-sources
-      - name: Cache .nuke/temp, ~/.nuget/packages
-        uses: actions/cache@v3
-        with:
-          path: |
-            .nuke/temp
-            ~/.nuget/packages
-          key: ${{ runner.os }}-${{ hashFiles('**/global.json', '**/*.csproj') }}
-      - name: Run './build.cmd All'
-        run: ./build.cmd All
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: "dotnet pack"
+        run: dotnet pack -c Release -o bin/nuget
+      - name: "dotnet test"
+        run: dotnet test -c Release
