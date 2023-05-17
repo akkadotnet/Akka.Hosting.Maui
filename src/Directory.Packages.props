@@ -1,0 +1,20 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <!-- App dependencies -->
+  <ItemGroup>
+	  
+  </ItemGroup>
+  <!-- Test dependencies -->
+  <ItemGroup>
+	  <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="$(TestSdkVersion)" />
+	  <PackageVersion Include="xunit" Version="$(XunitVersion)" />
+	  <PackageVersion Include="xunit.runner.visualstudio" Version="$(XunitRunnerVisualstudio)" />
+	  <PackageVersion Include="NBench" Version="2.0.1" />
+  </ItemGroup>
+	<!-- SourceLink support for all Akka.NET projects -->
+	<ItemGroup>
+		<PackageVersion Include="Microsoft.SourceLink.GitHub" Version="1.1.1" />
+	</ItemGroup>
+</Project>
