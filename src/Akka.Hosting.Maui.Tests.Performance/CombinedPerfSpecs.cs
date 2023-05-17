@@ -1,6 +1,6 @@
 ﻿using NBench;
 
-namespace Petabridge.Library.Tests.Performance
+namespace Akka.Hosting.Maui.Tests.Performance
 {
     /// <summary>
     /// Test to see gauge the impact of having multiple things to measure on a benchmark
