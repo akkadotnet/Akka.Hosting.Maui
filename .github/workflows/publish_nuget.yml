@@ -23,7 +23,7 @@ jobs:
           7.0.x
         global-json-file: "./global.json"
 
-   - name: Install MAUI Workloads
+    - name: Install MAUI Workloads
       run: |
         dotnet workload install maui --ignore-failed-sources
 
