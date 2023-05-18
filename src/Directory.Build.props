@@ -1,4 +1,4 @@
-﻿<Project>
+<Project>
   <PropertyGroup>
     <Copyright>Copyright © 2013-2023 Akka.NET Team</Copyright>
     <Authors>Akka.NET Team</Authors>
@@ -25,7 +25,7 @@
     <NBenchVersion>1.2.2</NBenchVersion>
     <XunitVersion>2.4.2</XunitVersion>
     <XunitRunnerVisualstudio>2.4.5</XunitRunnerVisualstudio>
-    <TestSdkVersion>17.4.1</TestSdkVersion>
+    <TestSdkVersion>17.6.0</TestSdkVersion>
   </PropertyGroup>
   
   <!-- SourceLink support for all Akka.NET projects -->
