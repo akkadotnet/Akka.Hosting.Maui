@@ -1,4 +1,4 @@
-﻿# Akka.Hosting.Maui
+# Akka.Hosting.Maui
 
 HOCON-less configuration, application lifecycle management, `ActorSystem` startup, and actor instantiation for [Akka.NET](https://getakka.net/). This is an [Akka.Hosting](https://github.com/akkadotnet/Akka.Hosting) adapter for [.NET Maui](https://dotnet.microsoft.com/en-us/apps/maui) applications.
 
@@ -9,7 +9,7 @@ The reason this exists in the first place is because Microsoft.Extensions.Hostin
 First, you need to install the Akka.Hosting.Maui package into your Maui application:
 
 ```shell
-dotnet add package Akka.Hosting
+dotnet add package Akka.Hosting.Maui
 ```
 
 Next, inside your `MauiProgram.cs` (or equivalent) call the `AddAkkaMaui` method:
