@@ -23,6 +23,10 @@ jobs:
           7.0.x
         global-json-file: "./global.json"
 
+   - name: Install MAUI Workloads
+      run: |
+        dotnet workload install maui --ignore-failed-sources
+
     - name: Create Packages
       run:  dotnet pack /p:PackageVersion=${{ github.ref_name }} -c Release -o ./output
 
