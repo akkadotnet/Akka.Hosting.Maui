@@ -7,7 +7,7 @@
   </ItemGroup>
   <!-- Test dependencies -->
   <ItemGroup>
-    <PackageVersion Include="Akka.Hosting" Version="1.5.6.1" />
+    <PackageVersion Include="Akka.Hosting" Version="1.5.7" />
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="$(TestSdkVersion)" />
     <PackageVersion Include="xunit" Version="$(XunitVersion)" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="$(XunitRunnerVisualstudio)" />
