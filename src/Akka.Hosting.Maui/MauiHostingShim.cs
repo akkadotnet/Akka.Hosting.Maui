@@ -31,7 +31,7 @@ public static class MauiAkkaHostingExtensions
         public CancellationToken ApplicationStopping => throw new NotImplementedException();
         public CancellationToken ApplicationStopped => throw new NotImplementedException();
     }
-    
+
     /// <summary>
     /// Registers an <see cref="ActorSystem"/> to this instance and creates a
     /// <see cref="AkkaConfigurationBuilder"/> that can be used to configure its
@@ -51,7 +51,7 @@ public static class MauiAkkaHostingExtensions
             builder(configurationBuilder);
         });
     }
-    
+
     /// <summary>
     /// Registers an <see cref="ActorSystem"/> to this instance and creates a
     /// <see cref="AkkaConfigurationBuilder"/> that can be used to configure its
@@ -68,15 +68,15 @@ public static class MauiAkkaHostingExtensions
         Action<AkkaConfigurationBuilder, IServiceProvider> builder)
     {
         var b = new AkkaConfigurationBuilder(services, actorSystemName);
-        services.AddSingleton<AkkaConfigurationBuilder>(sp =>
+        services.AddSingleton(sp =>
         {
             builder(b, sp);
             return b;
         });
-        
+
         b.Bind();
-        
-        services.AddSingleton<AkkaHostedService>(provider =>
+
+        services.AddSingleton(provider =>
             {
                 var configBuilder = provider.GetRequiredService<AkkaConfigurationBuilder>();
                 var loggerFactory = provider.GetRequiredService<ILoggerFactory>();
@@ -84,8 +84,7 @@ public static class MauiAkkaHostingExtensions
                 var akka = new AkkaHostedService(configBuilder, provider, logger, new MauiApplicationLifetime());
 
                 return akka;
-            })
-            .AddTransient<IMauiInitializeService, MauiAkkaService>();
+            }).AddTransient<IMauiInitializeService, MauiAkkaService>();
 
         return services;
     }

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Threading;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Maui.Hosting;
-
-namespace Akka.Hosting.Maui;
+﻿namespace Akka.Hosting.Maui;
 
 /// <summary>
 /// INTERNAL API
