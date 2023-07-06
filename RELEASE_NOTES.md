@@ -1,2 +1,3 @@
-## [1.5.6.1] / 18 May 2023
-- Initial release of Akka.Hosting.Maui, designed to enable [Akka.Hosting](https://github.com/akkadotnet/Akka.Hosting) support for .NET MAUI users.
+## [1.5.8] / 06 July 2023
+- Upgraded to Akka.Hosting and Akka.NET v1.5.8
+- Downgraded required runtime from .NET 7 to .NET 6
