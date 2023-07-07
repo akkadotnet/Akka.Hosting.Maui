@@ -24,7 +24,7 @@
     <TestsNetCoreFramework>net7.0</TestsNetCoreFramework>
     <NBenchVersion>1.2.2</NBenchVersion>
     <XunitVersion>2.4.2</XunitVersion>
-    <XunitRunnerVisualstudio>2.4.5</XunitRunnerVisualstudio>
+    <XunitRunnerVisualstudio>2.5.0</XunitRunnerVisualstudio>
     <TestSdkVersion>17.6.3</TestSdkVersion>
   </PropertyGroup>
   
