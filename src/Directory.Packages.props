@@ -4,6 +4,9 @@
   </PropertyGroup>
   <!-- App dependencies -->
   <ItemGroup>
+    <PackageVersion Include="Microsoft.Maui.Controls" Version="9.0.50"/>
+    <PackageVersion Include="Microsoft.Maui.Core" Version="9.0.50"/>
+    <PackageVersion Include="Microsoft.Extensions.Logging.Debug" Version="9.0.0"/>
   </ItemGroup>
   <!-- Test dependencies -->
   <ItemGroup>
