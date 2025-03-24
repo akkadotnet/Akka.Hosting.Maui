@@ -72,4 +72,9 @@
       <ProjectReference Include="..\..\Akka.Hosting.Maui\Akka.Hosting.Maui.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Include="Platforms\Windows\App.xaml" />
+      <None Include="Platforms\Windows\App.xaml.cs" />
+    </ItemGroup>
+
 </Project>
