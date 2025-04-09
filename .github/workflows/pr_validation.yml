@@ -35,8 +35,6 @@ jobs:
       - name: "Install .NET SDK"
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: |
-            9.0.x
           global-json-file: "./global.json"
       - name: Install MAUI Workloads
         run: |

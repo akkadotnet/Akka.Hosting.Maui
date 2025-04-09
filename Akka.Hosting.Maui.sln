@@ -8,6 +8,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 		RELEASE_NOTES.md = RELEASE_NOTES.md
 		global.json = global.json
+		appsettings.json = appsettings.json
+		src\Directory.Build.props = src\Directory.Build.props
+		src\Directory.Packages.props = src\Directory.Packages.props
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Akka.Hosting.Maui", "src\Akka.Hosting.Maui\Akka.Hosting.Maui.csproj", "{F3AE6628-7679-415F-8C2C-98EF4B1E4ACC}"
