@@ -20,8 +20,8 @@
 
 
   <PropertyGroup>
-    <LibraryFramework>net7.0</LibraryFramework>
-    <TestsNetCoreFramework>net7.0</TestsNetCoreFramework>
+    <LibraryFramework>net9.0</LibraryFramework>
+    <TestsNetCoreFramework>net9.0</TestsNetCoreFramework>
     <NBenchVersion>1.2.2</NBenchVersion>
     <XunitVersion>2.5.3</XunitVersion>
     <XunitRunnerVisualstudio>2.5.3</XunitRunnerVisualstudio>
