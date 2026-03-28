@@ -25,7 +25,7 @@
     <NBenchVersion>1.2.2</NBenchVersion>
     <XunitVersion>2.5.3</XunitVersion>
     <XunitRunnerVisualstudio>2.5.3</XunitRunnerVisualstudio>
-    <TestSdkVersion>17.7.2</TestSdkVersion>
+    <TestSdkVersion>17.8.0</TestSdkVersion>
   </PropertyGroup>
   
   <!-- SourceLink support for all Akka.NET projects -->
