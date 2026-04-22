@@ -6,7 +6,7 @@
   <ItemGroup>
     <PackageVersion Include="Microsoft.Maui.Controls" Version="$(MauiVersion)"/>
     <PackageVersion Include="Microsoft.Maui.Core" Version="$(MauiVersion)"/>
-    <PackageVersion Include="Microsoft.Extensions.Logging.Debug" Version="9.0.0"/>
+    <PackageVersion Include="Microsoft.Extensions.Logging.Debug" Version="10.0.7"/>
   </ItemGroup>
   <!-- Test dependencies -->
   <ItemGroup>
